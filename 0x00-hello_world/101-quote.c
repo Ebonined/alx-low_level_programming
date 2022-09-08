@@ -12,6 +12,6 @@ int main(void)
 
 	fprintf(stderr, "%s", str);
 
-	return (0);
+	return (1);
 
 }
