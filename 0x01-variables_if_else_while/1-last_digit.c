@@ -23,11 +23,22 @@ int main(void)
 
 	sprintf(str, "%d", n);
 
-	lastchar[0] = str[strlen(str)-1];
+	lastchar[0] = str[strlen(str) - 1];
 
 	int lastint = atoi(lastchar);
 
-	printf("%c", str[3]);
+	if (lastint > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastint);
+	}
+	else if (lastint == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, lastint);
+	}
+	else if (lastint < 6 && lastint != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastint);
+	}
 
 	return (0);
 }
