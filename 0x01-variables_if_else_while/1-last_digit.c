@@ -16,6 +16,7 @@ int main(void)
 	int n;
 	char str[100];
 	char lastchar[1];
+	int lastint;
 
 	srand(time(0));
 
@@ -25,7 +26,7 @@ int main(void)
 
 	lastchar[0] = str[strlen(str) - 1];
 
-	int lastint = atoi(lastchar);
+	lastint = atoi(lastchar);
 
 	if (lastint > 5)
 	{
