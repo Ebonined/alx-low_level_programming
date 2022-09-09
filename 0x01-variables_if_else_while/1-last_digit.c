@@ -23,6 +23,7 @@ int main(void)
 
 	sprintf(str, "%d", n);
 	lastchar[0] = str[strlen(str) - 1];
+	printf("%s", lastchar);
 	lastint = atoi(lastchar);
 
 	if (n < 0)
