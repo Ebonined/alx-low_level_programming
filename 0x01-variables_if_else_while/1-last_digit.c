@@ -14,18 +14,16 @@
 int main(void)
 {
 	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
 	char str[100];
 	char lastchar[1];
 	int lastint;
 
-	srand(time(0));
-
-	n = rand() - RAND_MAX / 2;
-
 	sprintf(str, "%d", n);
-
 	lastchar[0] = str[strlen(str) - 1];
-
 	lastint = atoi(lastchar);
 
 	if (n < 0)
