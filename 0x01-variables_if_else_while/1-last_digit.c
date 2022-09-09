@@ -15,6 +15,7 @@ int main(void)
 {
 	int n;
 	char str[100];
+	char lastchar[1];
 
 	srand(time(0));
 
@@ -22,7 +23,7 @@ int main(void)
 
 	sprintf(str, "%d", n);
 
-	char lastchar = str[strlen(str)-1];
+	lastchar[0] = str[strlen(str)-1];
 
 	int lastint = atoi(lastchar);
 
