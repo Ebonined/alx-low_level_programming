@@ -22,7 +22,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	sprintf(str, "%d", n);
-	lastchar[0] = str[strlen(str) - 1];
+	lastchar[0] = str[1];
 	printf("%s", lastchar);
 	lastint = atoi(lastchar);
 
