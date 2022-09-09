@@ -28,6 +28,11 @@ int main(void)
 
 	lastint = atoi(lastchar);
 
+	if (n < 0)
+	{
+		lastint = lastint * -1;
+	}
+
 	if (lastint > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, lastint);
