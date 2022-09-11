@@ -33,12 +33,12 @@ int main(void)
 						putchar(' ');
 						putchar(num3);
 						putchar(num4);
-
-						if (pnum1 != 98 || pnum2 != 99)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					}
+					if ((pnum1 != 98 || pnum2 != 99)
+						&& (pnum1 < pnum2))
+					{
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
