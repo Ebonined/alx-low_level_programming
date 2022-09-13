@@ -46,3 +46,20 @@ int _islower(int c)
 	}
 	return num;
 }
+
+int _isalpha(int c)
+{
+	int num;
+
+	if (isalpha(c))
+	{
+		num = 1;
+	}
+	else
+	{
+		num = 0;
+	}
+	
+	return num;
+}
+
