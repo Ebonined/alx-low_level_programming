@@ -1,6 +1,3 @@
 #include <stdio.h>
 
-void _putchar(char str[])
-{
-        printf("%s", str);
-}
+void _putchar(char str);
