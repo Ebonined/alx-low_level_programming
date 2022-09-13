@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -11,18 +12,5 @@
  */
 
 void _putchar(char str);
-
-int main(void)
-{
-	char alpha;
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-	{
-		_putchar(alpha);
-	}
-
-	_putchar('\n');
-
-	return (0);
-}
+void print_alphabet(void);
 
