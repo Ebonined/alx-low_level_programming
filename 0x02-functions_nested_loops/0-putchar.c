@@ -8,13 +8,18 @@
  */
 
 /* function declaration */
-void _putchar(char str[]);
+void _putchar(char str);
 
 int main(void)
 {
 	char str[] = "_putchar";
+	int num;
+	for (num=0; num<=7; num++)
+	{
+		_putchar(str[num]);
+	}
 
-	_putchar(str);
+	_putchar('\n');
 
 	return (0);
 }
