@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 void _putchar(char str);
 
@@ -28,4 +29,14 @@ void print_alphabet_x10(void)
 		
 		_putchar('\n');
 	}
+}
+
+int _islower(int c)
+{
+	int num;
+
+	num = islower(c);
+	printf("%d", num);
+
+	return num;
 }
