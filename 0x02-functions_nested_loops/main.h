@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 void _putchar(char str);
 
@@ -86,3 +87,11 @@ int print_sign(int n)
 	return num;
 }
 
+int _abs(int c)
+{
+	int num;
+
+	num = abs(c);
+
+	return num;
+}
