@@ -36,7 +36,13 @@ int _islower(int c)
 	int num;
 
 	num = islower(c);
-	printf("%d", num);
-
+	if (num)
+	{
+		num = 1;
+	}
+	else
+	{
+		num = 0;
+	}
 	return num;
 }
