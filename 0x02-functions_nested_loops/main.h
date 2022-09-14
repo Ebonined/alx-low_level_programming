@@ -115,18 +115,19 @@ int print_last_digit(int c)
 void jack_bauer(void)
 {
 	int hr, hr2, min, min2;
+	int count = -1;
 
 	for (hr = '0'; hr <= '2'; hr++)
 	{
 		for (hr2 = '0'; hr2 <= '9'; hr2++)
 		{
+			++count;
 			for (min = '0'; min <= '5'; min++)
 			{
 				for (min2 = '0'; min2 <= '9'; min2++)
 				{
-					if (hr <= '2' && hr2 <= '3' && hr <= 5 && hr2 <= '9')
+					if (count <= 23)
 					{
-
 						_putchar(hr);
 						_putchar(hr2);
 						_putchar(':');
