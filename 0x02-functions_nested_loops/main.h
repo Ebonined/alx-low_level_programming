@@ -188,3 +188,22 @@ int add(int a, int b)
 	return res;
 
 }
+
+void print_to_98(int n)
+{
+	int num;
+
+	for (num = n; num <= 98, num++)
+	{
+		printf("%d", num);
+		if ( num < 98 )
+		{
+			printf(",");
+                        printf(" ");
+		}
+		else
+		{
+			printf("\n");
+		}
+	}
+}	
