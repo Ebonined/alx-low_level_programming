@@ -162,12 +162,12 @@ void times_table(void)
 
 			if (num2 < 9)
 			{
-				_putchar(',');
-				_putchar(' ');
+				printf(",");
+				printf(" ");
 			}
 			else
 			{
-				_putchar('\n');
+				printf("\n");
 			}
 		}
 	}
