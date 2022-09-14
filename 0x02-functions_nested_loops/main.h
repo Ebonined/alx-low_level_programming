@@ -160,10 +160,15 @@ void times_table(void)
 			res = num * num2;
 			printf("%d", res);
 
-			if (num2 < 9)
+			if (num2 < 9 && res < 10)
 			{
 				printf(",");
-				printf(" ");
+				printf("  ");
+			}
+			else if (num2 < 9 && res >= 10)
+			{
+				printf(",");
+                                printf(" ");
 			}
 			else
 			{
