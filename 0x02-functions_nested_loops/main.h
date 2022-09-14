@@ -249,12 +249,12 @@ void print_times_table(int n)
                         	if (num2 < n && (res + num)  < 10)
                         	{
                                 	printf(",");
-                                	printf("  ");
+                                	printf("   ");
                         	}
                         	else if (num2 < n && (res + num) >= 10)
                         	{
                                 	printf(",");
-                                	printf(" ");                                                                             }
+                                	printf("  ");                                                                             }
                         	else                                                                                             {
                                 	printf("\n");
                         	}
