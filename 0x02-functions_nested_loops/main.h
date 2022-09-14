@@ -118,7 +118,7 @@ void jack_bauer(void)
 
 	for (hr = '0'; hr <= '2'; hr++)
 	{
-		for (hr2 = '0'; hr2 <= '2'; hr2++)
+		for (hr2 = '0'; hr2 <= '3'; hr2++)
 		{
 			for (min = '0'; min <= '5'; min++)
 			{
