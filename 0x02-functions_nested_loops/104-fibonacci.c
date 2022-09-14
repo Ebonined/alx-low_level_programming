@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	unsigned long int firstn = 1;
-	unsigned long int secondn = 2;
-	unsigned long int sum;
+	long int firstn = 1;
+	long int secondn = 2;
+	long int sum;
 	int num;
 
 	printf("%ld, ", firstn);
@@ -22,11 +22,11 @@ int main(void)
 
 		if (num < 95)
 		{
-			printf("%lu, ", sum);
+			printf("%ld, ", sum);
 		}
 		else
 		{
-			printf("%lu\n", sum);
+			printf("%ld\n", sum);
 		}
 
 		firstn = secondn;
