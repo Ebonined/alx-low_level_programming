@@ -254,7 +254,15 @@ void print_times_table(int n)
                         	else if (num2 < n && (res + num) >= 10)
                         	{
                                 	printf(",");
-                                	printf("  ");                                                                             }
+					if ((res + num) >= 100)
+					{
+                                		printf(" ");
+					}
+					else
+					{
+						printf("  ");
+					}			
+				}
                         	else                                                                                             {
                                 	printf("\n");
                         	}
