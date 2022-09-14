@@ -229,4 +229,36 @@ void print_to_98(int n)
 	{
 		printf("%d\n", 98);
 	}
-}	
+}
+
+
+void print_times_table(int n)
+{
+	int num;
+	int num2;
+	int res;
+	if (n < 15 && n > 0)
+	{
+
+		for (num = 0; num <= n; num++)
+        	{
+                	for (num2 = 0; num2 <= n; num2++)
+                	{                                                                                                        res = num * num2;
+                        	printf("%d", res);
+
+                        	if (num2 < 9 && (res + num)  < 10)
+                        	{
+                                	printf(",");
+                                	printf("  ");
+                        	}
+                        	else if (num2 < 9 && (res + num) >= 10)
+                        	{
+                                	printf(",");
+                                	printf(" ");                                                                             }
+                        	else                                                                                             {
+                                	printf("\n");
+                        	}
+                	}
+        	}
+	}
+}
