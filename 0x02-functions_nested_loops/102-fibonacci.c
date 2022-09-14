@@ -14,15 +14,22 @@ int main(void)
 
 	intarr[0] = 1;
 	intarr[1] = 2;
-	
-	printf("%ld\n", intarr[0]);
-	printf("%ld\n", intarr[1]);
+
+	printf("%ld, ", intarr[0]);
+	printf("%ld, ", intarr[1]);
 
 	for (index = 0; index <= 47; index++)
 	{
 		tempnum = intarr[index] + intarr[index + 1];
 		intarr[index + 2] = tempnum;
-		printf("%ld\n", tempnum);
+		if (index < 47)
+		{
+			printf("%ld, ", tempnum);
+		}
+		else
+		{
+			printf("%ld\n", tempnum);
+		}
 	}
 
 	return (0);
