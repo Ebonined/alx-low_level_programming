@@ -8,21 +8,19 @@
 
 int main(void)
 {
-        long int intarr[100];
-        long int tempnum;
+	long int intarr[100];
+	long int tempnum;
 	long int sum = 0;
 	long int value;
-        int index = 0;
+	int index = 0;
 	int lasti = 0;
 
-        intarr[0] = 1;
-        intarr[1] = 2;
+	intarr[0] = 1;
+	intarr[1] = 2;
 
 	while (1)
 	{
 		tempnum = intarr[index] + intarr[index + 1];
-
-
 		if (tempnum < 4000000)
 		{
 			intarr[index + 2] = tempnum;
@@ -32,13 +30,12 @@ int main(void)
 		{
 			break;
 		}
-
 		index++;
 	}
 
-	printf("%d\n", lasti);
+	lasti = lasti + 2;
 
-	for (index = 0; index < sizeof(intarr); index++)
+	for (index = 0; index <= lasti; index++)
 	{
 		value = intarr[index];
 		if (value % 2 == 0)
@@ -49,6 +46,6 @@ int main(void)
 
 	printf("%ld\n", sum);
 
-        return (0);
+	return (0);
 }
 
