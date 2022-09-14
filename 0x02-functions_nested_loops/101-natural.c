@@ -13,7 +13,6 @@ int main(void)
 	int for5;
 	int sum = 0;
 
-
 	for (num = 0; num <= 1024; num++)
 	{
 		for3 = num % 3;
@@ -31,6 +30,8 @@ int main(void)
 
 	}
 
-	return sum;
+	printf("%d", sum)
+
+	return (sum);
 
 }
