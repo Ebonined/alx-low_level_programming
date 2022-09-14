@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 
 void _putchar(char str);
 
@@ -94,4 +95,19 @@ int _abs(int c)
 	num = abs(c);
 
 	return num;
+}
+
+int print_last_digit(int c)
+{
+	char str[100];
+	char laststr[100];
+	char lastint;
+
+	sprintf(str, "%d", c);
+	laststr[0] = str[strlen(str) - 1];
+	lastint = atoi(laststr);
+
+	printf("%d\n", lastint);
+
+	return lastint;
 }
