@@ -107,7 +107,7 @@ int print_last_digit(int c)
 	laststr[0] = str[strlen(str) - 1];
 	lastint = atoi(laststr);
 
-	printf("%d\n", lastint);
+	printf("%d", lastint);
 
 	return lastint;
 }
