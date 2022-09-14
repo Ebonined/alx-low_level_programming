@@ -9,11 +9,11 @@
 int main(void)
 {
 	long int intarr[50];
+	long int tempnum;
 	int index;
 
 	intarr[0] = 1;
 	intarr[1] = 2;
-	long int tempnum;
 	
 	printf("%ld\n", intarr[0]);
 	printf("%ld\n", intarr[1]);
