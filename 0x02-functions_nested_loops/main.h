@@ -111,3 +111,32 @@ int print_last_digit(int c)
 
 	return lastint;
 }
+
+void jack_bauer(void)
+{
+	int hr, hr2, min, min2;
+
+	for (hr = '0'; hr <= '2'; hr++)
+	{
+		for (hr2 = '0'; hr2 <= '2'; hr2++)i
+		{
+			for (min = '0'; min <= '5'; min++)
+			{
+				for (min2 = '0'; min2 <= '9'; min2++)
+				{
+					_putchar(hr);
+					_putchar(hr2);
+					_putchar(':');
+					_putchar(min);
+					_putchar(min2);
+					if (num != '2' || num2 != '2' || hr != 5 || hr2 != '9')
+					{
+						_putchar('\n');
+					}
+				}
+			}
+		}
+	}
+
+	_putchar('\n');
+}
