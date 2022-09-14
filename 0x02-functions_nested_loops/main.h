@@ -129,7 +129,7 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(min);
 					_putchar(min2);
-					if (num != '2' || num2 != '2' || hr != 5 || hr2 != '9')
+					if (hr != '2' || hr2 != '2' || hr != 5 || hr2 != '9')
 					{
 						_putchar('\n');
 					}
