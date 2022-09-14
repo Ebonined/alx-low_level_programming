@@ -158,12 +158,12 @@ void times_table(void)
 		for (num2 = 0; num2 <= 9; num2++)
 		{
 			res = num * num2;
-			puts("%d", res);
+			printf("%d", res);
 
 			if (num2 < 9)
 			{
 				_putchar(',');
-				_putchsr(' ');
+				_putchar(' ');
 			}
 			else
 			{
