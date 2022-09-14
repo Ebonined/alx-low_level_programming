@@ -269,4 +269,9 @@ void print_times_table(int n)
                 	}
         	}
 	}
+	ekif (n == 0)
+	{
+		printf("\n");
+	}
+
 }
