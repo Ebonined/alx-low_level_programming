@@ -145,3 +145,31 @@ void jack_bauer(void)
 	}
 
 }
+
+
+void times_table(void)
+{
+	int num;
+	int num2;
+	int res;
+
+	for (num = 0; num <= 9; num++)
+	{
+		for (num2 = 0; num2 <= 9; num2++)
+		{
+			res = num * num2;
+			puts("%d", res);
+
+			if (num2 < 9)
+			{
+				_putchar(',');
+				_putchsr(' ');
+			}
+			else
+			{
+				_putchar('\n');
+			}
+		}
+	}
+}
+
