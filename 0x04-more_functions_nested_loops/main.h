@@ -16,3 +16,10 @@ int _isupper(int c)
 
 	return (num);
 }
+
+int mul(int a, int b)
+{
+	int num = a * b;
+
+	return (num);
+}
