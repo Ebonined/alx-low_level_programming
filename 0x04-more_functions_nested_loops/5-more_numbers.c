@@ -25,7 +25,7 @@ void print_int(int value)
 void more_numbers(void)
 {
 	char num = 4;
-	int line;;
+	int line;
 
 	for (line = 0; line < 10; line++)
 	{
