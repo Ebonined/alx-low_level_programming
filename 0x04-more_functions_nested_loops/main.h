@@ -4,6 +4,7 @@
 int _putchar(char c);
 void more_numbers(void);
 void print_line(int n);
+void print_diagonal(int n);
 
 int _isupper(int c)
 {
@@ -79,30 +80,4 @@ void print_int(int value)
 		_putchar((value % 10) + '0');
 	}
 }
-/**
- * more_numbers - head function
- */
-void more_numbers(void)
-{
-	char num = 4;
-	int line;
 
-	for (line = 0; line < 10; line++)
-	{
-		_putchar('0');
-
-		for (num = 0; num <= 14; num++)
-		{
-			if (num < 14)
-			{
-				print_int(num);
-			}
-
-			else
-			{
-				print_int(num);
-				_putchar('\n');
-			}
-		}
-	}
-}
