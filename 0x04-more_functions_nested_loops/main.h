@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 
+int _putchar(char c);
+void more_numbers(void);
+
 int _isupper(int c)
 {
 	int num;
@@ -61,4 +64,3 @@ void print_most_numbers(void)
 		}
 	}
 }
-
