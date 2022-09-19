@@ -1,6 +1,6 @@
 /**
  * reset_to_98 - Entry point
- * @*n: variable
+ * @n: variable
  *
  * Return: Always (0) Success
  */
