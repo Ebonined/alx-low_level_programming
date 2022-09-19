@@ -1,12 +1,12 @@
 #include <string.h>
 
 /**
- * _strcpy - entry function
+ * _strcpy - Entry function
  * @dest: destination
  * @src: source
+ *
+ * Return: Always success
  */
-
-
 char *_strcpy(char *dest, char *src)
 {
 	char *out;
