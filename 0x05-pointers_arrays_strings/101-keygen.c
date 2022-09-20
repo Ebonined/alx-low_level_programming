@@ -37,7 +37,7 @@ int main(void)
 
 		while (i2 < i)
 		{
-			if ((password[i2] + 1) <= 126 )
+			if ((password[i2] + 1) <= 126)
 			{
 				password[i2] += 1;
 				diff -= 1;
@@ -46,7 +46,7 @@ int main(void)
 					break;
 				}
 			}
-			if (i2 == (i - 1) && diff != 0 )
+			if (i2 == (i - 1) && diff != 0)
 			{
 				i2 = 0;
 			}
@@ -54,7 +54,7 @@ int main(void)
 			i2++;
 		}
 
-	}	
+	}
 
 	printf("%s\n", password);
 
