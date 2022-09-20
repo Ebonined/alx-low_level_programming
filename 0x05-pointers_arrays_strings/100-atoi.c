@@ -1,20 +1,34 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "main.h"
 
 /**
- * _atoi - str to int function
- * @s: str variable
- *
- * Return: always int
+ * _atoi - entry function
+ * @s: str variable to convert
+ * Return: integer converted.
  */
-
 int _atoi(char *s)
 {
-        int conv;
-   
+	short chk;
+	int i, neg, conv;
 
-        conv = atoi(s);
+	i = neg = conv = 0;
 
-        return (conv);
+	chk = 0;
+	neg = -1;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			neg *= -1;
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			conv *= 10;
+			conv -= (s[i] - '0');
+			chk = 1;
+		}
+		else if (chk == 1)
+			break;
+		i++;
+	}
+	conv *= neg;
+	return (conv);
 }
