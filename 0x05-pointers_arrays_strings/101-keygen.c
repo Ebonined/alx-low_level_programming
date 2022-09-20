@@ -11,7 +11,7 @@
 int main(void)
 {
 	char password[101];
-	int ran, total, i, i2, diff, total2;
+	int ran, total, i, i2, diff;
 
 	srand(time(NULL));
 
