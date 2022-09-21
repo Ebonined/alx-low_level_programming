@@ -2,8 +2,8 @@
  * _strncat - function to join two strings
  * @dest: destination string
  * @src: source string
- * @int: number of src to be concatenated to dest
- * 
+ * @n: number of src to be concatenated to dest
+ *
  * Return: char *
  *
  */
@@ -11,6 +11,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
+
 	i = j = 0;
 
 	while (*(dest + i))
@@ -31,7 +32,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	dest[i + 1] = '\0';
-	
-	
+
+
 	return (dest);
 }
