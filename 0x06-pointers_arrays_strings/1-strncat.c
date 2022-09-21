@@ -19,20 +19,22 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 
-	while ((*(dest + i) = *(src + j)))
+	if (n != 0)
 	{
-		if (j + 1 == n)
+		while (*(src + j))
 		{
-			break;
+			(*(dest + i) = *(src + j));
+			i++;
+			j++;
+
+			if (j >= n)
+			{
+				break;
+			}
 		}
 
-		i++;
-		j++;
-
+		dest[i + 1] = '\0';
 	}
-
-	dest[i + 1] = '\0';
-
 
 	return (dest);
 }
