@@ -1,3 +1,5 @@
+#include <string.h>
+
 /**
  * _strcat - function to join two strings
  * @dest: destination string
@@ -9,15 +11,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
 
-	i = j = 0;
-	while (*(dest + i))
-		i++;
-	while ((*(dest + i) = *(src + j)))
+	int len = strlen(dest);
+	int len2 = strlen(src);
+	int i;
+
+	for (i = 0; i < len; i++)
 	{
-		i++;
-		j++;
+		dest[i] = dest[i];
 	}
+	for (i = 0; i < len2; i++)
+	{
+		dest[i + len] = src[i];
+	}
+
+	dest[i + len + 1] = '\0';
+
 	return (dest);
 }
