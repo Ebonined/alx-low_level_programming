@@ -7,27 +7,20 @@
 
 char *rot13(char *str)
 {
-	int i = 0;
+	int i, j;
+	char real[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (*(str + i))
+	for (i = 0; *(str + i); i++)
 	{
-		while ((*(str + i) >= 65 && *(str + i) <= 90)
-		|| (*(str + i) >= 97 && *(str + i) <= 122))
+		for (j = 0; j < 52; j++)
 		{
-			if ((*(str + i) >= 65 && *(str + i) <= 77)
-			|| (*(str + i) >= 97 && *(str + i) <= 109))
+			if (real[j] == *(str + i))
 			{
-				*(str + i) += 13;
-				break;
-			}
-			else
-			{
-				*(str + i) -= 13;
+				*(str + i) = rot13[j];
 				break;
 			}
 		}
-		i++;
 	}
-
 	return (str);
 }
