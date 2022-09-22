@@ -1,4 +1,8 @@
-#include <stdio.h>
+/**
+ * reverse_array - reverse array function
+ * @a: int array pointer  to reverse
+ * @n: number of items in array
+ */
 
 void reverse_array(int *a, int n)
 {
@@ -13,7 +17,7 @@ void reverse_array(int *a, int n)
 		i2 = n - 1 - i;
 		temp[i2] = a[i];
 	}
-	
+
 	for (i = 0; i < n; i++)
 	{
 		a[i] = temp[i];
