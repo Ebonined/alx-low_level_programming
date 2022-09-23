@@ -1,11 +1,4 @@
-/**
- * _putchar - print char function
- * @c: char to print
- *
- * Return: int
- */
-int _putchar(char c);
-
+#include "main.h"
 /**
  * print_number - print number function
  * @n: integer to print
