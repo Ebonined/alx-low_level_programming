@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 /**
  * _strchr - find char in string
  * @s: string to be search
@@ -26,7 +24,7 @@ char *_strchr(char *s, char c)
 
 	if (bool == 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	else
 	{
