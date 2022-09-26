@@ -10,25 +10,21 @@ char *_strchr(char *s, char c)
 {
 	char *o;
 	int i = 0;
-	int bool = 0;
 
 	while (*(s + i))
 	{
 		if (*(s + i) == c)
 		{
-			bool = 1;
 			break;
 		}
 		i++;
 	}
 
-	if (bool == 0)
-	{
-		return (0);
-	}
-	else
+	if (*(s + i) == c)
 	{
 		o = (s + i);
 		return (o);
 	}
+
+	return (0);
 }
