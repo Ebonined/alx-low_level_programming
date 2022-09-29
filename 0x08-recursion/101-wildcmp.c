@@ -1,3 +1,5 @@
+char *wildcard(char *st1, char *st2);
+
 /**
  * test - check wildcard match
  * @st3: compared string
