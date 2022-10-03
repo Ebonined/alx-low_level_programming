@@ -1,10 +1,19 @@
-#include <stdio.h>
-/**
- * _puts - Entry point function
- * @str: string variable
- */
+#include "main.h"
 
+/**
+ * _puts - prints a string in stdout
+ * @str: string to print
+ *
+ * Return: void
+ */
 void _puts(char *str)
 {
-	puts(str);
+	int i = 0;
+
+	while (*(str + i))
+	{
+		_putchar(*(str + i));
+		i++;
+	}
+	_putchar('\n');
 }

@@ -1,4 +1,3 @@
-#include <stdio.h>
 /**
  * _strcmp - compares two strings
  * @s1: left side string

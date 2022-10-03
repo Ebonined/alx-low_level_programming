@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _atoi - entry function
  * @s: str variable to convert

@@ -1,17 +1,19 @@
-#include <string.h>
-
 /**
- * _strcpy - Entry function
- * @dest: destination
- * @src: source
+ * _strcpy - copies string pointed to by src to buffer pointed to by dest
+ * @src: source to copy
+ * @dest: destination of copy
  *
- * Return: Always success
+ * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *out;
+	int i = 0;
 
-	out = strcpy(dest, src);
-
-	return (out);
+	while (*(src + i))
+	{
+		*(dest + i) = *(src + i);
+		i++;
+	}
+	*(dest + i) = '\0';
+	return (dest);
 }
