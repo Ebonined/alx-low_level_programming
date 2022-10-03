@@ -4,7 +4,7 @@
 /**
  * main - prints min no. of change for an ammount.
  * @argc: number of arguments
- * @argv: argument vector of pointers
+ * @argv: argument vector of pointer
  *
  * Return: int
  */
