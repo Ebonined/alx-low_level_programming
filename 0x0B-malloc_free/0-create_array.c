@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 #include <stdlib.h>
 
 /**
@@ -19,6 +20,10 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 	{
 		out[i] = c;
+	}
+	if (i == 0)
+	{
+		out = NULL;
 	}
 
 	return (out);
