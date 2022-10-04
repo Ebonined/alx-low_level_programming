@@ -5,6 +5,12 @@
             "label": "C/C++: gcc build active file",
             "command": "/usr/bin/gcc",
             "args": [
+                "$(find -name \"*.c\" -type f | grep *main.c* -v)",
+                "-Wall",
+                "-Werror",
+                "-Wextra",
+                "-pedantic",
+                "-std=gnu89",
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
