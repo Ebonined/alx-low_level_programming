@@ -3,6 +3,7 @@
 
 /**
  * string_nconcat - concat two strings based on the value of n
+ * @n: number to concate from s2 to s1
  * @s1: string 1
  * @s2: string 2
  *
@@ -47,5 +48,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else if (s2 != NULL && (i < (lens1 + lens2)))
 			output[i] = s2[i - lens1];
 	}
+	output[i] = '\0';
 	return (output);
 }
