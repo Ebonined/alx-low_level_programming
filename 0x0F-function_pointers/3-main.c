@@ -23,6 +23,11 @@ int main(int argc, char **argv)
 	s = argv[2];
 
 	fun = get_op_func(s);
+	if (fun == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
 	out = fun(a, b);
 
