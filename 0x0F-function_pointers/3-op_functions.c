@@ -63,7 +63,7 @@ int op_mod(int a, int b)
 {
 	if (b != 0)
 	{
-		return (a % b);
+		return (a - (b * (a / b)));
 	}
 
 	printf("Error\n");
