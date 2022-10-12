@@ -22,7 +22,7 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while ((*(opr + i)).op)
+	while ((*(opr + i)).op != NULL)
 	{
 		if (strcmp(s, (*(opr + i)).op) == 0)
 			break;
