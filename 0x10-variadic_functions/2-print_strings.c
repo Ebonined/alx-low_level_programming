@@ -4,7 +4,7 @@
 /**
  * print_strings - function to print string
  * @separator: string separator
- * @n: numbers of str to print
+ * @n: numbers of str to printS
  *
  * Return: void
  */
