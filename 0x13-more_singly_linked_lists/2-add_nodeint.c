@@ -1,15 +1,14 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - adds to end of a list_t
+ * add_nodeint - adds a new node ato the beginning of a listint_t
  * @head: new struct head
- * @n: integer in head
- * Return: address to added element or NULL
+ * @n: int in head
+ * Return: listint_t or NULL
  */
-listint_t *add_nodeint_end(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
-	listint_t *last = *head;
 
 	if (head == NULL)
 		return (NULL);
@@ -18,17 +17,12 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		return (NULL);
 	}
-
-	new->data = n;
-	new->next = NULL;
-
-	if (*head == NULL)
+	if (n == 0)
 	{
-		*head = new;
-		return (*head);
+		new->data = 0;
 	}
-	while (last->next != NULL)
-		last = last->next;
-	last->next = new;
+	new->data = n;
+	new->next = *head;
+	*head = new;
 	return (*head);
 }
